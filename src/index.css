@@ -1,0 +1,16 @@
+:root {
+
+    direction: rtl;
+    font-family: 'system-ui' !important;
+
+}
+
+.bg-black-orange {
+    background: linear-gradient(to right, #000000, #1a1007);
+}
+
+
+.font-sys {
+
+    font-family: 'system-ui' !important;
+}

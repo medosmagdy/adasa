@@ -1,0 +1,159 @@
+.footer-section {
+    background-color: #050505;
+    /* نفس لون الخلفية الموحد */
+    padding: 80px 0 30px;
+    direction: ltr;
+    font-family: 'Cairo', system-ui, sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* لوجو عدسة */
+.footer-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-logo-box {
+    background-color: #ff7300;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.footer-logo-text {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* عناوين الأعمدة */
+.footer-column-title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+/* الخط البرتقالي الصغير بجانب العنوان */
+.footer-column-title::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 2px;
+    background-color: #ff7300;
+}
+
+/* الروابط */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #888;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: #ff7300;
+    padding-right: 5px;
+}
+
+/* حقل الاشتراك الصغير */
+.footer-subscribe-box p {
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-input {
+    background-color: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: white;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.footer-btn {
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    /* زرار بيضاوي زي الصورة */
+    padding: 10px 0;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-btn:hover {
+    background-color: #e66700;
+}
+
+/* الأيقونات الاجتماعية */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: #ff7300;
+    color: white;
+}
+
+/* شريط الحقوق السفلي */
+.footer-bottom {
+    margin-top: 60px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555;
+    font-size: 0.85rem;
+}
+
+.footer-bottom-links a {
+    color: #555;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer-bottom-links a:hover {
+    color: #888;
+}

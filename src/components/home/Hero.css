@@ -1,0 +1,90 @@
+.hero-section {
+    background-color: #0a0a0a;
+    /* رسم المربعات الخلفية */
+    background-image:
+        linear-gradient(rgba(26, 26, 26, 0.5) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(26, 26, 26, 0.5) 1px, transparent 1px);
+    background-size: 50px 50px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    direction: rtl;
+    /* لضمان اتجاه النصوص العربية */
+}
+
+.hero-badge {
+    font-size: 0.9rem;
+    background-color: transparent;
+}
+
+.hero-title {
+    font-size: calc(1.5rem + 3.5vw);
+    /* Responsive font size */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-title span {
+    color: #ff7300;
+}
+
+.hero-description {
+    max-width: 600px;
+    margin: 0 auto 3rem;
+    color: #888;
+    font-size: 1.1rem;
+}
+
+/* الأزرار */
+.btn-primary-orange {
+    background-color: #ff7300 !important;
+    color: white !important;
+    border-radius: 50px !important;
+    border: none !important;
+    transition: 0.3s ease;
+}
+
+.btn-primary-orange:hover {
+    background-color: #e66700 !important;
+    transform: translateY(-2px);
+}
+
+.btn-outline-custom {
+    border-radius: 50px !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+    background-color: transparent !important;
+    transition: 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* كروت الإحصائيات */
+.stat-card {
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    background-color: rgba(15, 15, 15, 0.5);
+    backdrop-filter: blur(5px);
+    transition: 0.3s;
+}
+
+.stat-card:hover {
+    border-color: #ff7300;
+    transform: translateY(-5px);
+}
+
+.stat-value {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.stat-label {
+    color: #888;
+}

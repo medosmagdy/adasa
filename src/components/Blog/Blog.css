@@ -1,0 +1,115 @@
+/* الخلفية الشبكية المستمرة */
+.blog-page {
+    background-color: #050505;
+    background-image:
+        linear-gradient(rgba(26, 26, 26, 0.4) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(26, 26, 26, 0.4) 1px, transparent 1px);
+    background-size: 40px 40px;
+    min-height: 100vh;
+    direction: rtl;
+    font-family: 'system-ui', 'Cairo', sans-serif;
+    color: white;
+}
+
+/* العنوان العلوي */
+.blog-header {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.blog-badge {
+    background-color: rgba(255, 115, 0, 0.1);
+    color: #ff7300;
+    border: 1px solid rgba(255, 115, 0, 0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* شريط البحث والتصنيفات */
+.search-filter-wrapper {
+    background-color: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 15px 25px;
+    margin-bottom: 40px;
+}
+
+.search-input-group {
+    background-color: #050505;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input-group input {
+    background: transparent;
+    border: none;
+    color: white;
+    width: 100%;
+    outline: none;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #888;
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background-color: #ff7300;
+    color: white;
+    border-color: #ff7300;
+}
+
+/* أزرار عرض الشبكة (Grid/List toggle) */
+.view-toggle-btn {
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #888;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.view-toggle-btn.active {
+    background-color: #ff7300;
+    color: white;
+}
+
+/* الترقيم (Pagination) */
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.page-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    color: #888;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.page-link.active {
+    background-color: #ff7300;
+    color: white;
+}

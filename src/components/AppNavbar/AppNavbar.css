@@ -1,0 +1,26 @@
+.nav-links-container {
+    background-color: rgba(255, 255, 255, 0.05);
+    /* خلفية غامقة خفيفة للكبسولة */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ستايل اللينك العادي */
+.nav-item-link {
+    color: #888 !important;
+    transition: 0.3s all ease;
+    border-radius: 50px;
+    margin: 2px 0;
+}
+
+/* ستايل اللينك لما يكون Active - الكلاس ده بيتضاف تلقائيا */
+.nav-item-link.active {
+    color: #fff !important;
+    background-color: #ff7300;
+    /* اللون البرتقالي بتاعك */
+    box-shadow: 0 4px 15px rgba(255, 115, 0, 0.3);
+}
+
+/* تأثير الـ Hover */
+.nav-item-link:hover:not(.active) {
+    color: #ff7300 !important;
+}

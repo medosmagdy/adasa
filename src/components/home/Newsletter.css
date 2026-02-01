@@ -1,0 +1,132 @@
+/* الحاوية الأساسية للسكشن لضمان استمرار الخلفية الشبكية */
+.newsletter-section {
+    background: linear-gradient(120deg,
+            #0a0a0a 0%,
+            #1a1a1a 30%,
+            #200c00 100%);
+    padding: 120px 0;
+    direction: ltr;
+    font-family: 'Cairo', system-ui, sans-serif;
+}
+
+/* الكارت الكبير */
+.newsletter-card {
+    background-color: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    padding: 60px 40px;
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* أيقونة الجواب البرتقالية */
+.email-icon-box {
+    background-color: #ff7300;
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 1.8rem;
+    color: white;
+    box-shadow: 0 10px 20px rgba(255, 115, 0, 0.2);
+}
+
+.newsletter-title {
+    color: white;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.newsletter-subtitle {
+    color: #888;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* حاوية المدخلات (Input Group) */
+.subscribe-form {
+    display: flex;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.email-input {
+    background-color: #050505;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 15px 20px;
+    color: white;
+    flex-grow: 1;
+    text-align: right;
+    transition: 0.3s;
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: #ff7300;
+    box-shadow: 0 0 0 4px rgba(255, 115, 0, 0.1);
+}
+
+.subscribe-btn {
+    background-color: #ff7300;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 0 35px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #e66700;
+    transform: translateY(-2px);
+}
+
+/* الجزء السفلي (صور المشتركين) */
+.social-proof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.subscriber-avatars {
+    display: flex;
+    flex-direction: row-reverse;
+    /* لجعل التداخل صحيح من اليمين لليسار */
+}
+
+.subscriber-avatars img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid #0f0f0f;
+    margin-right: -10px;
+    /* تداخل الصور */
+}
+
+.proof-text span {
+    color: white;
+    font-weight: bold;
+}
+
+/* للموبايل */
+@media (max-width: 768px) {
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .subscribe-btn {
+        padding: 15px;
+    }
+}

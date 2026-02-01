@@ -1,0 +1,149 @@
+/* الحاوية الأساسية للسكشن */
+.latest-articles-section {
+    background-color: #050505;
+    background-size: 40px 40px;
+    direction: ltr;
+    font-family: 'Cairo', system-ui, sans-serif;
+}
+
+/* العنوان والشارة */
+.latest-badge {
+    background-color: rgba(255, 115, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ff7300;
+}
+
+.view-all-link {
+    color: #ff7300;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.view-all-link:hover {
+    color: #ff9133;
+    text-decoration: underline;
+}
+
+/* استايل الكارت الأساسي */
+.article-card {
+    background-color: #0f0f0f;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+}
+
+/* تأثير الـ Hover اللي طلبته */
+.article-card:hover {
+    transform: scale(1.03);
+    /* تكبير الكارت */
+    border-color: rgba(255, 115, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 115, 0, 0.1);
+    /* ظل برتقالي خفيف */
+}
+
+/* الصورة داخل الكارت */
+.card-img-wrapper {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.article-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* شارة القسم فوق الصورة */
+.category-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 0.75rem;
+}
+
+/* محتوى الكارت النصي */
+.article-body {
+    padding: 20px;
+    text-align: right;
+}
+
+.meta-info {
+    color: #666;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}
+
+.article-title {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    transition: 0.3s;
+}
+
+/* تغيير لون العنوان عند الـ hover على الكارت */
+.article-card:hover .article-title {
+    color: #ff7300;
+}
+
+.article-excerpt {
+    color: #888;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* الجزء السفلي (الكاتب والسهم) */
+.article-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #ff7300;
+}
+
+.arrow-icon {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #666;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+/* تأثير السهم عند الـ Hover */
+.article-card:hover .arrow-icon {
+    background-color: #ff7300;
+    color: white;
+    transform: rotate(-45deg);
+    /* حركة التفاف للسهم */
+}

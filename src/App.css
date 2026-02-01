@@ -1,0 +1,57 @@
+/* الخلفية العامة للنافبار */
+.custom-navbar {
+    background-color: #0e0e0e;
+    /* لون داكن جداً كما في الصورة */
+    direction: ltr;
+    /* لضمان الترتيب من اليمين لليسار */
+}
+
+/* الحاوية الرمادية التي تجمع الروابط في المنتصف */
+.nav-links-container {
+    background-color: #1a1a1a;
+    border: 1px solid #2d2d2d;
+    display: flex;
+    align-items: center;
+}
+
+/* نمط الروابط */
+.nav-item-link {
+    color: #ffffff !important;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+/* العنصر الفعّال (Active) الذي يظهر كزر برتقالي داخل الحاوية */
+.active-pill {
+    background-color: #ff6b00;
+    border-radius: 50px;
+    color: white !important;
+}
+
+/* زر "ابدأ القراءة" المستقل */
+.btn-start-reading {
+    background-color: #ff6b00 !important;
+    border: none !important;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 10px 25px;
+}
+
+/* اللوجو والنصوص */
+.brand-name {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.brand-subtext {
+    font-size: 0.7rem;
+}
+
+.search-icon-wrapper {
+    cursor: pointer;
+}
+
+/* إخفاء حدود الـ toggle في الموبايل */
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}

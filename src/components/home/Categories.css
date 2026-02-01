@@ -1,0 +1,63 @@
+.categories-section {
+    background-color: #050505;
+    background-size: 40px 40px;
+    direction: ltr;
+    font-family: 'Cairo', system-ui, sans-serif;
+}
+
+.category-badge {
+    background-color: rgba(255, 115, 0, 0.05);
+    border: 1px solid rgba(255, 115, 0, 0.2);
+    color: #ff7300;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.category-card {
+    background: linear-gradient(145deg, rgba(25, 25, 25, 0.8), rgba(15, 15, 15, 0.8));
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: right;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}
+
+.category-card:hover {
+    border-color: #ff7300;
+    transform: translateY(-5px);
+    background: rgba(30, 30, 30, 0.9);
+}
+
+.icon-wrapper {
+    background-color: rgba(255, 115, 0, 0.1);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    /* لضبط المحاذاة لليمين */
+}
+
+.icon-inner {
+    color: #ff7300;
+    font-size: 1.5rem;
+}
+
+.category-name {
+    color: white;
+    font-weight: 800;
+    margin-bottom: 5px;
+    font-size: 1.25rem;
+}
+
+.category-count {
+    color: #666;
+    font-size: 0.85rem;
+}
