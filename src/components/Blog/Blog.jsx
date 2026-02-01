@@ -67,7 +67,6 @@ const Blog = () => {
 
                     {/* View Info */}
                     <div className="d-flex justify-content-between align-items-center mb-4">
-                        <div className="text-secondary small">عرض 28 مقالات</div>
                         <div className="d-flex align-items-center">
                             <button className="view-toggle-btn active">▦</button>
                             <button className="view-toggle-btn">≡</button>
